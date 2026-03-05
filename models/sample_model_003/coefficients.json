@@ -1,0 +1,24 @@
+{
+  "model_type": "logistic_regression",
+  "coefficients": {
+    "(Intercept)": 2.1045,
+    "gender": 0.1812,
+    "bicarbonate_mean": -0.0418,
+    "log_creatinine_mean": 1.8934,
+    "hemoglobin_mean": -0.1891,
+    "bun_mean": -0.0041,
+    "potassium_mean": 0.5723,
+    "sysbp_mean": -0.0079,
+    "spo2_mean": -0.0445
+  },
+  "prediction_function": "validation_data$log_creatinine_mean <- log(validation_data$creatinine_mean + 0.001) \n LP <- `(Intercept)` + gender * validation_data$gender + bicarbonate_mean * validation_data$bicarbonate_mean + log_creatinine_mean * validation_data$log_creatinine_mean + hemoglobin_mean * validation_data$hemoglobin_mean + bun_mean * validation_data$bun_mean + potassium_mean * validation_data$potassium_mean + sysbp_mean * validation_data$sysbp_mean + spo2_mean * validation_data$spo2_mean \n probabilities <- 1 / (1 + exp(-LP)) \n result_matrix <- matrix(probabilities, ncol = 1) \n colnames(result_matrix) <- 'probability' \n result_matrix",
+  "required_packages": [],
+  "metadata": {
+    "model_name": "AKI Model (log creatinine — developer pre-processing included)",
+    "version": "1.0",
+    "created_date": "2025-08-01",
+    "outcome_type": "binary",
+    "variables": ["gender", "bicarbonate_mean", "creatinine_mean", "hemoglobin_mean", "bun_mean", "potassium_mean", "sysbp_mean", "spo2_mean"],
+    "description": "AKI logistic regression using log-transformed creatinine. The log transformation is applied automatically by the prediction function — the evaluator provides raw creatinine_mean and the developer's code handles the transformation. This illustrates developer-side pre-processing embedded in the prediction_function field."
+  }
+}
