@@ -1,24 +1,24 @@
 {
   "model_type": "logistic_regression",
   "coefficients": {
-    "(Intercept)": 3.388602,
-    "gender": 0.1837806,  
-    "bicarbonate_mean": -0.0422585, 
-    "creatinine_mean": 1.047176,  
-    "hemoglobin_mean": -0.1877922 , 
-    "bun_mean": -0.0036745,  
-    "potassium_mean":  0.5659359 ,  
-    "sysbp_mean": -0.0081565,  
-    "spo2_mean": -0.0432393
+    "(Intercept)": 2.1045,
+    "gender": 0.1812,
+    "bicarbonate_mean": -0.0418,
+    "log_creatinine_mean": 1.8934,
+    "hemoglobin_mean": -0.1891,
+    "bun_mean": -0.0041,
+    "potassium_mean": 0.5723,
+    "sysbp_mean": -0.0079,
+    "spo2_mean": -0.0445
   },
-  "prediction_function": "# R code for logistic regression predictions\n# LP = linear predictor (computed automatically including intercept)\n\n# Convert linear predictor to probabilities using logistic function\nprobabilities <- 1 / (1 + exp(-LP))\n\n# Return as matrix for consistency\nresult_matrix <- matrix(probabilities, ncol = 1)\ncolnames(result_matrix) <- 'probability'\nresult_matrix",
+  "prediction_function": "probabilities <- 1 / (1 + exp(-LP)) \n result_matrix <- matrix(probabilities, ncol = 1) \n colnames(result_matrix) <- 'probability' \n result_matrix",
   "required_packages": [],
   "metadata": {
-    "model_name": "AKI Model",
+    "model_name": "AKI Model (log creatinine — evaluator pre-processing required)",
     "version": "1.0",
     "created_date": "2025-08-01",
-     "outcome_type": "binary",
-    "variables": ["gender",  "bicarbonate_mean" , "creatinine_mean",  "hemoglobin_mean" , "bun_mean",  "potassium_mean",  "sysbp_mean",  "spo2_mean"],
-    "description": "Sample AKI logistic regression model for testing IndepValidate"
+    "outcome_type": "binary",
+    "variables": ["gender", "bicarbonate_mean", "log_creatinine_mean", "hemoglobin_mean", "bun_mean", "potassium_mean", "sysbp_mean", "spo2_mean"],
+    "description": "AKI logistic regression using log-transformed creatinine. The variable log_creatinine_mean must be created by the evaluator before calling secure_model_validation() using: validation_data$log_creatinine_mean <- log(validation_data$creatinine_mean + 0.001)"
   }
 }
