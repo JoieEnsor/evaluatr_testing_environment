@@ -11,7 +11,7 @@
     "sysbp_mean": -0.0081565,  
     "spo2_mean": -0.0432393
   },
-  "prediction_function": "# R code for logistic regression predictions \n # LP = linear predictor (computed automatically including intercept) \n\n # Convert linear predictor to probabilities using logistic function \n probabilities <- 1 / (1 + exp(-LP)) \n\n # Return as matrix for consistency \n result_matrix <- matrix(probabilities, ncol = 1) \n colnames(result_matrix) <- 'probability' \n result_matrix",
+  "prediction_function": "probabilities <- 1 / (1 + exp(-LP)) \n\n # Return as matrix for consistency \n result_matrix <- matrix(probabilities, ncol = 1) \n colnames(result_matrix) <- 'probability' \n result_matrix",
   "required_packages": [],
   "metadata": {
     "model_name": "AKI Model",
