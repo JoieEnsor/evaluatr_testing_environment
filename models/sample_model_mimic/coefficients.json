@@ -1,16 +1,16 @@
 {
   "model_type": "logistic",
-  "obfuscation_key": "2be603fb2c10d0add9efd7ffa6abea6b",
+  "obfuscation_key": "c6ab4c03eb088da14734e74fbdf90e2a",
   "coefficients": {
-    "(Intercept)": -38.8285607966,
-    "gender": -29.7777248446,
-    "bicarbonate_mean": -30.5840871203,
-    "creatinine_mean": 8.0342201205,
-    "hemoglobin_mean": 17.1632367731,
-    "potassium_mean": 1.9834313605,
-    "bun_mean": -33.5624933303,
-    "sysbp_mean": -10.3174112631,
-    "spo2_mean": 0.51643122894
+    "(Intercept)": 6.9578565753,
+    "gender": 50.2050271174,
+    "bicarbonate_mean": -22.0346717028,
+    "creatinine_mean": 10.3099711442,
+    "hemoglobin_mean": -14.3465027415,
+    "potassium_mean": -21.0447721794,
+    "bun_mean": 29.8606763914,
+    "sysbp_mean": 2.9651998239,
+    "spo2_mean": -39.7342498611
   },
   "preprocessing": null,
   "model_parameters": null,
