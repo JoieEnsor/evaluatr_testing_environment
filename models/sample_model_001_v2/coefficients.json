@@ -1,0 +1,34 @@
+{
+  "model_type": "logistic",
+  "obfuscation_key": "bbcbc07143a49ba7de131eb9d440f471",
+  "coefficients": {
+    "(Intercept)": -22.6109663134,
+    "gender": 45.1051318623,
+    "bicarbonate_mean": -8.8972425173,
+    "creatinine_mean": -26.4387291822,
+    "hemoglobin_mean": 17.8702466562,
+    "bun_mean": 26.0596293007,
+    "potassium_mean": 2.7201901279,
+    "sysbp_mean": 5.613993526,
+    "spo2_mean": 21.1815794008
+  },
+  "preprocessing": null,
+  "model_parameters": null,
+  "metadata": {
+    "model_id": "sample_model_002_v2",
+    "model_name": "MIMIC-III AKI Prediction Model v2",
+    "version": "2.0",
+    "outcome_type": "binary",
+    "variables": [
+      "gender",
+      "bicarbonate_mean",
+      "creatinine_mean",
+      "hemoglobin_mean",
+      "bun_mean",
+      "potassium_mean",
+      "sysbp_mean",
+      "spo2_mean"
+    ],
+    "description": "AKI prediction logistic model from MIMIC-III. Obfuscated v1 format."
+  }
+}
