@@ -12,6 +12,7 @@
     "sysbp_mean": 5.613993526,
     "spo2_mean": 21.1815794008
   },
+  "prediction_function": null,
   "preprocessing": null,
   "model_parameters": null,
   "metadata": {
