@@ -1,0 +1,34 @@
+{
+  "model_type": "logistic",
+  "obfuscation_key": "e5ddf607024a4ed9fa21b4cdab58f494",
+  "coefficients": {
+    "(Intercept)": 43.0672204081,
+    "gender": 34.4340674213,
+    "bicarbonate_mean": -49.3771339391,
+    "creatinine_mean": -28.8092337421,
+    "hemoglobin_mean": 42.1170590323,
+    "potassium_mean": -25.2840617811,
+    "bun_mean": -9.6144586059,
+    "sysbp_mean": 34.911110525,
+    "spo2_mean": -2.1319168388
+  },
+  "preprocessing": null,
+  "model_parameters": null,
+  "metadata": {
+    "model_id": "sample_model_mimic_cf",
+    "model_name": "MIMIC AKI Logistic Regression",
+    "version": "1.0",
+    "outcome_type": "binary",
+    "variables": [
+      "gender",
+      "bicarbonate_mean",
+      "creatinine_mean",
+      "hemoglobin_mean",
+      "potassium_mean",
+      "bun_mean",
+      "sysbp_mean",
+      "spo2_mean"
+    ],
+    "description": "Logistic regression for AKI prediction fitted to MIMIC-III sample."
+  }
+}
