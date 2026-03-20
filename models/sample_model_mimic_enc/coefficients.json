@@ -1,0 +1,26 @@
+{
+  "model_type": "logistic",
+  "obfuscation_key": "a826edaa1a8338b93569f558aeeff53f",
+  "encrypted_coefficients": "NAb9L+HmjqHZi+5aUxcq7hLR3kb7g+K/HLV4vrgTrl6F97VBEd9HKOAEvRZb9sQQTG9P1Q374QxKip67aLeTVTU2rYz/D4QrQGTKI6YbpHRBd0T30h4kbsHZ56DRpo/GiIMFG2EWZzkDM5s963RmQwnFwJREDfBd7AcwWUQIFAejcED333Ox90XRgPGgmk4l3UEufTez/M6YyGGMZXy9EHFDoGTlernXrJUI49N/Xu2a4tExaCqHeduEmWt8LW1RE8cS4zD2ttFyb8cyU8mvOuczE+CVNLgQ3d/caSIdOu3QdqzrgojNPCFhyO7uVNp/gLKNH9EjZFDHfKzjxTXEtjlWOfVO",
+  "encryption_iv": "t7InL7uc+Fb7bm7j",
+  "preprocessing": null,
+  "model_parameters": null,
+  "metadata": {
+    "model_id": "sample_model_mimic_enc",
+    "model_name": "MIMIC AKI (encrypted)",
+    "version": "1.0",
+    "outcome_type": "binary",
+    "variables": [
+      "gender",
+      "bicarbonate_mean",
+      "creatinine_mean",
+      "hemoglobin_mean",
+      "potassium_mean",
+      "bun_mean",
+      "sysbp_mean",
+      "spo2_mean"
+    ],
+    "description": "",
+    "encryption": "aes256gcm"
+  }
+}
