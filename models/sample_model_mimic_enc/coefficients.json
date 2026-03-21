@@ -1,8 +1,7 @@
 {
   "model_type": "logistic",
-  "obfuscation_key": "a826edaa1a8338b93569f558aeeff53f",
-  "encrypted_coefficients": "NAb9L+HmjqHZi+5aUxcq7hLR3kb7g+K/HLV4vrgTrl6F97VBEd9HKOAEvRZb9sQQTG9P1Q374QxKip67aLeTVTU2rYz/D4QrQGTKI6YbpHRBd0T30h4kbsHZ56DRpo/GiIMFG2EWZzkDM5s963RmQwnFwJREDfBd7AcwWUQIFAejcED333Ox90XRgPGgmk4l3UEufTez/M6YyGGMZXy9EHFDoGTlernXrJUI49N/Xu2a4tExaCqHeduEmWt8LW1RE8cS4zD2ttFyb8cyU8mvOuczE+CVNLgQ3d/caSIdOu3QdqzrgojNPCFhyO7uVNp/gLKNH9EjZFDHfKzjxTXEtjlWOfVO",
-  "encryption_iv": "t7InL7uc+Fb7bm7j",
+  "encrypted_coefficients": "amLxJOMs9CcJ/X5RvMtu4gqoxLhgvtTPLnMTtEU2Smfu/dUu9+DIVPN8c3BXihXVMUDCsIsWmS1xnUO6ANX8dg3nnCb1xcPxl+fj9+Yi1dgllU2/KXdoI/1U5/6+U16XcrLVxdMVNF3XeOHDM+GjonlBwCWJ54ZzlRhlTq4SHeQ/IqMZJ3I4oizgpCv0HfGyl8z2zJDxAksqmuKpBi8vXETR8t176TFWq/P3rTX3fI+f5DBxSSoPS4XGljkEZEoBcHXOk7GeKPCefbWiZpQg3w46+3bQ+6LRXAUVJO87iMRn23xIyyMoBeTUCxAuvsN54c5Ki/kIJdeA9sdeMr0G9g==",
+  "encryption_iv": "7vc7QfUDKVrDFdJ4",
   "preprocessing": null,
   "model_parameters": null,
   "metadata": {
