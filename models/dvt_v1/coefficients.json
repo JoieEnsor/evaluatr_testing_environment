@@ -1,0 +1,23 @@
+{
+  "model_type": "logistic",
+  "encrypted_coefficients": "o2fjv1BrgEgU/qkc1sWnu/YVwSG0FA1ppKZO/XQubYPo6/gM3W+9B5ylle7zw04HPPxBDy7RsJUVQmvCb+qGU1C/XP+gzfjT/774eH9AIm9Y4Kfh2bqy5dSxN8GckcQBArz7LjMro81QeVfVQmz33CxJaG8HPYREeMRpOZNhsFzVCwLrxoCfo5bgqD6vQxiv3Bei6mYQglnQZNnR0nFfE1ZpVU9xM6RcZlxq3Lh/VGJ0BfOAqOv0ER50pxTi",
+  "encryption_iv": "hBe/MWwUwrmKcC4W",
+  "preprocessing": null,
+  "model_parameters": null,
+  "metadata": {
+    "model_id": "dvt_v1",
+    "model_name": "DVT Diagnosis Model v1",
+    "version": "1.0",
+    "outcome_type": "binary",
+    "variables": [
+      "male",
+      "ab_ddimer",
+      "calf_diff",
+      "vein_distension",
+      "malignancy",
+      "immobile"
+    ],
+    "description": "Logistic regression for DVT diagnosis",
+    "encryption": "aes256gcm"
+  }
+}
